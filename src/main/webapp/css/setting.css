@@ -1,0 +1,83 @@
+@import
+	url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap")
+	;
+
+:root { 
+	--bg-color: #add8e6; 
+	--nav-color: #ffffff; 
+	--text-color: #000; 
+	--button-color: #00bfff; 
+	--hover-color: #0077be; 
+	--card-text-color: #87cefa; 
+	--footer-bg-color: #ffffff; 
+	--body-font: 16px; 
+	--heading-font: 24px; 
+	--h1-font: 4em; 
+	--h2-font: 3em; 
+	--h3-font: 2em; 
+	--h4-font: 1.5em; 
+	--h5-font: 1em; 
+	--complete-color: #00ff00; 
+	--pending-color: #ffff00; 
+	--process-color: #9370db;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: var(- -bg-color);
+	color: var(- -text-color);
+	font-family: "Playfair Display", serif;
+}
+
+.title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+/* Style the form labels */
+.label {
+	display: block;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Style the form input fields */
+.input {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	margin-bottom: 1rem;
+}
+
+/* Style the form submit button */
+.button {
+	background-color: #008080;
+	color: #fff;
+	border: none;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #006666;
+}
+
+/* Set the styles for the main content area */
+main {
+	margin: 2rem;
+}
