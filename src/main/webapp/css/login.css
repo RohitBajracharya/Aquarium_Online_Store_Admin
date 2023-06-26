@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+:root {
+  --bg-color: #add8e6;
+  --nav-color: #ffffff;
+  --text-color: #000;
+  --button-color: #00bfff;
+  --button2-color: #0d6efd;
+  --hover-color: #0077be;
+  --hover2-color: #0062cc;
+  --card-text-color: #87cefa;
+  --footer-bg-color: #ffffff;
+  --body-font: 16px;
+  --heading-font: 24px;
+  --h1-font: 4em;
+  --h2-font: 3em;
+  --h3-font: 2em;
+  --h4-font: 1.5em;
+  --h5-font: 1em;
+  --complete-color: #00ff00;
+  --pending-color: #ffff00;
+  --process-color: #9370db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background-image: url('../resources/logo/bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login-container {
+  margin: auto;
+  width: 30%;
+  padding: 20px;
+  background-color: var(--card-text-color);
+  color: var(--text-color);
+  font-size: var(--body-font);
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-container h1 {
+  font-size: var(--h2-font);
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 10px;
+  font-size: var(--h5-font);
+}
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-bottom: 2px solid var(--hover2-color);
+}
+
+.login-container button[type="submit"] {
+  padding: 10px;
+  background-color: var(--button2-color);
+  color: var(--nav-color);
+  font-size: var(--h5-font);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: var(--hover-color);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.message{
+  height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 80%;
+  }
+  .login-container h1 {
+    font-size: var(--h3-font);
+  }
+
+  .avatar,
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login-container h1 {
+    font-size: var(--h4-font);
+  }
+
+  .avatar,
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
